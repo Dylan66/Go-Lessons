@@ -1,3 +1,4 @@
+/*
 package main
 
 import "fmt"
@@ -34,4 +35,35 @@ func concat(piece string, piece2 string) string{
 	return piece + piece2
 }
 
+*/
+//
+/*
+package main
 
+import "fmt"
+
+func main () {
+	messages := 60
+	const messagesSent=40
+	messages= incrementSends(messages, messagesSent)
+	fmt.Println("You have sent", messages)
+}
+func incrementSends(messages, messagesSent int) int {
+	return messages + messagesSent
+}
+*/
+
+
+//returning multiple return values
+package main 
+
+import "fmt"
+
+func main () {firstName, _:=getNames()
+	fmt.Println("The namee is", firstName)
+
+}
+
+func getNames() (string, string){
+	return "Mary","Mangoes"
+}
