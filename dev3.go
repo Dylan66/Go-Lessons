@@ -1,6 +1,11 @@
 package main
 
 import "fmt"
+// functions
+func add(peter, lois int) int{
+	return peter - lois
+
+}
  func main () {
 	averageOpenRate, displayMessage := .23, " is the average messagerate"
 	fmt.Println("The credentials are:", averageOpenRate,displayMessage)
@@ -21,4 +26,12 @@ import "fmt"
 	fmt.Println(msg, message)
 	fmt.Println(numberText)
 
+	fmt.Println(concat("The name is,", "Jane"))
+	fmt.Println(add(5,3))
+
 }
+func concat(piece string, piece2 string) string{
+	return piece + piece2
+}
+
+
