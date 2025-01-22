@@ -59,7 +59,8 @@ package main
 
 import "fmt"
 
-func main () {firstName, _:=getNames()
+func main () {
+	getNames():=firstName, _
 	fmt.Println("The namee is", firstName)
 
 }
