@@ -1,5 +1,6 @@
 //structs are key value pairs they are similar to dictionaries in python
 //my first struct
+/*
 package main
 
 import "fmt"
@@ -54,4 +55,27 @@ func main(){
     }
 
 
+}
+
+*/
+//embedded struct
+package main
+
+import "fmt"
+
+type vehicle struct {
+    model string
+    year int
+}
+
+type lorry struct {
+    vehicle
+    weight int
+    color string
+}
+
+func main() {
+    bigCar := lorry{vehicle{"volvo", 2025}, 5000, "green"}
+    fmt.Println("The model of the car is", bigCar.model)
+    fmt.Println("The year of manufacture is", bigCar.year)
 }
