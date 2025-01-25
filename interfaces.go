@@ -27,7 +27,7 @@ type shapes interface {
 	// height represents the height of an object in float64 format.
 	radius float64
  }
-
+//this represents a circle
  func (cir circle) area() float64 {
 	return 3.14*cir.radius*cir.radius
  }
